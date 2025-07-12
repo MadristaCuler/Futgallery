@@ -3,47 +3,20 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Player Details</title>
-  <link rel="stylesheet" href="styles.css">
-  <style>
-    body {
-      text-align: center;
-      font-family: Arial, sans-serif;
-      background: #fff;
-      color: #111;
-      padding: 1rem;
-    }
-    #player-details img {
-      width: 200px;
-      height: auto;
-      border-radius: 10px;
-      margin-bottom: 1rem;
-    }
-    #player-details h1 {
-      font-size: 1.8rem;
-      margin: 0.5rem 0;
-    }
-    #player-details p {
-      font-size: 1rem;
-      max-width: 600px;
-      margin: 0.5rem auto;
-    }
-    .back-link {
-      text-decoration: none;
-      color: #111;
-      font-weight: bold;
-      font-size: 1.2rem;
-      display: inline-block;
-      margin-top: 1rem;
-    }
-    .back-link:hover {
-      color: #555;
-    }
-  </style>
+  <title>Football Icons Gallery</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <div id="player-details"></div>
-  <a href="index.html" class="back-link">⬅️ Back to Gallery</a>
-  <script src="player.js"></script>
+  <header>
+    <h1>⚽ Football Icons Gallery ⚽</h1>
+    <div class="filters">
+      <button onclick="filterPlayers('All')">All</button>
+      <button onclick="filterPlayers('Retired')">Retired</button>
+      <button onclick="filterPlayers('Current')">Current</button>
+      <button onclick="filterPlayers('Youngster')">Youngsters</button>
+    </div>
+  </header>
+  <main class="gallery" id="gallery"></main>
+  <script src="script.js"></script>
 </body>
 </html>
