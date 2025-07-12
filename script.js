@@ -49,3 +49,4 @@ function filterPlayers(category) {
 }
 
 displayPlayers(players);
+window.playersData = players;
